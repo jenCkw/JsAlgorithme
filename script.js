@@ -14,3 +14,5 @@ let nom = "jenny";
 
 let lgr = nom.length;
 console.log(lgr);
+console.log(nom.toUpperCase());
+console.log(nom.toLowerCase());
