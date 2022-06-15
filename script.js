@@ -3,10 +3,14 @@
 //let nom = 'jenny';
 //console.log(nom.indexOf('y'));
 
+//Les varaibles
 let nom = "jenny";
-let postnom = "Chikwanine"
-console.log(nom, postnom);
+// let postnom = "Chikwanine"
+// console.log(nom, postnom);
 
-let nom_complet = nom + " " + postnom;
+// let nom_complet = nom + " " + postnom;
 
-console.log(nom_complet, postnom);
+// console.log(nom_complet, postnom);
+
+let lgr = nom.length;
+console.log(lgr);
