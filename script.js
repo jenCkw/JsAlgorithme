@@ -42,15 +42,28 @@
 
 // Fonctions
 
-const myTExt = 'i am jenny';
-const newString = myTExt.replace('jenny', 'chikwanine')
-console.log(myTExt);
-console.log(newString);
+// const myTExt = 'i am jenny';
+// const newString = myTExt.replace('jenny', 'chikwanine')
+// console.log(myTExt);
+// console.log(newString);
 
-let nom = 'Dorcas muhindo';
-nom = 'jenny chikwnine';
-console.log(nom);
+// let nom = 'Dorcas muhindo';
+// nom = 'jenny chikwnine';
+// console.log(nom);
 
-let name = 'je suis fort moi';
-let name2 = name.replace('je suis', 'nous sommes');
-console.log(name, name2);
+// let name = 'je suis fort moi';
+// let name2 = name.replace('je suis', 'nous sommes');
+// console.log(name, name2);
+
+// fonction join
+
+const myArray = ['I', 'love', 'chocolate'];
+
+const madeAString = myArray.join(' ');
+console.log(madeAString);
+
+
+const jenny = ['I', 'love', 'chocolate'];
+
+const chik = jenny.join(' ');
+console.log(chik);
