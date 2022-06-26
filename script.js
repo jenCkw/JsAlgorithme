@@ -35,7 +35,22 @@
 
 //----methode substr
 
-let nom = 'jenny';
-console.log(nom.substr(0, 4));
+// let nom = 'jenny';
+// console.log(nom.substr(0, 4));
 
-console.log(nom.typeof);
+// console.log(nom.typeof);
+
+// Fonctions
+
+const myTExt = 'i am jenny';
+const newString = myTExt.replace('jenny', 'chikwanine')
+console.log(myTExt);
+console.log(newString);
+
+let nom = 'Dorcas muhindo';
+nom = 'jenny chikwnine';
+console.log(nom);
+
+let name = 'je suis fort moi';
+let name2 = name.replace('je suis', 'nous sommes');
+console.log(name, name2);
