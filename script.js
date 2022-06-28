@@ -69,6 +69,15 @@
 // console.log(chik);
 
 //la methode random
-const myNumber = Math.random()
-console.log(myNumber);
+//const myNumber = Math.random()
+//console.log(myNumber);
 
+//comportement dynalique avec js
+let para = document.querySelector('p')
+
+para.addEventListener('click', updateName);
+
+function updateName() {
+    let name = prompt('enter a new name');
+    para.textContent = 'player 1:' + name;
+}
