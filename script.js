@@ -55,15 +55,20 @@
 // let name2 = name.replace('je suis', 'nous sommes');
 // console.log(name, name2);
 
-// fonction join
+// // fonction join
 
-const myArray = ['I', 'love', 'chocolate'];
+// const myArray = ['I', 'love', 'chocolate'];
 
-const madeAString = myArray.join(' ');
-console.log(madeAString);
+// const madeAString = myArray.join(' ');
+// console.log(madeAString);
 
 
-const jenny = ['I', 'love', 'chocolate'];
+// const jenny = ['I', 'love', 'chocolate'];
 
-const chik = jenny.join(' ');
-console.log(chik);
+// const chik = jenny.join(' ');
+// console.log(chik);
+
+//la methode random
+const myNumber = Math.random()
+console.log(myNumber);
+
