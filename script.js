@@ -76,8 +76,16 @@
 let para = document.querySelector('p')
 
 para.addEventListener('click', updateName);
+para.addEventListener('click', deletename);
 
 function updateName() {
     let name = prompt('enter a new name');
     para.textContent = 'player 1:' + name;
+    para.textContent = 'player 2:' + name;
+
+}
+
+function deletename(){
+    let name2 =  prompt('delete name')
+    para.textContent =  'delete 2:'+ name2;
 }
