@@ -91,10 +91,16 @@
 // }
 
 //function 2
- let para = document.querySelector('p');
- para.addEventListener('click', updateName);
+//  let para = document.querySelector('p');
+//  para.addEventListener('click', updateName);
 
- function updateName() {
-     let name = prompt('Enter a new name');
-     para.textContent = 'player 1:' +name;
- }
+//  function updateName() {
+//      let name = prompt('Enter a new name');
+//      para.textContent = 'player 1:' +name;
+//  }
+
+function createParagraphe() {
+    let para =  document.createElement('p');
+    para.textContent = 'Vous avez cliqué';
+    document.body.appendChild(para)
+}
