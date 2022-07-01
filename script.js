@@ -73,19 +73,28 @@
 //console.log(myNumber);
 
 //comportement dynalique avec js
-let para = document.querySelector('p')
+// let para = document.querySelector('p')
 
-para.addEventListener('click', updateName);
-para.addEventListener('click', deletename);
+// para.addEventListener('click', updateName);
+// para.addEventListener('click', deletename);
 
-function updateName() {
-    let name = prompt('enter a new name');
-    para.textContent = 'player 1:' + name;
-    para.textContent = 'player 2:' + name;
+// function updateName() {
+//     let name = prompt('enter a new name');
+//     para.textContent = 'player 1:' + name;
+//     para.textContent = 'player 2:' + name;
 
-}
+// }
 
-function deletename(){
-    let name2 =  prompt('delete name')
-    para.textContent =  'delete 2:'+ name2;
-}
+// function deletename(){
+//     let name2 =  prompt('delete name')
+//     para.textContent =  'delete 2:'+ name2;
+// }
+
+//function 2
+ let para = document.querySelector('p');
+ para.addEventListener('click', updateName);
+
+ function updateName() {
+     let name = prompt('Enter a new name');
+     para.textContent = 'player 1:' +name;
+ }
