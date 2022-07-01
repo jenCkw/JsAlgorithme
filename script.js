@@ -99,7 +99,7 @@
 //      para.textContent = 'player 1:' +name;
 //  }
 
-function createParagraphe() {
+/*function createParagraphe() {
     let para =  document.createElement('p');
     para.textContent = 'Vous avez cliqué';
     document.body.appendChild(para)
@@ -110,3 +110,23 @@ let buttons = document.querySelectorAll('button');
 for (let i=0; i < buttons.length; i++){
     buttons[i].addEventListener('click',createParagraph);
 }
+*/
+
+/*function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'you clicked the button';
+    para.body.appendChild(para);
+}*/
+
+/*
+  1. Regrouper les coordonnées de tous les boutons de la page et les organiser en tableau
+  2. Faire une boucle dans ce tableau et ajouter un "click event listener" à chaque bouton
+
+  Quand le bouton est cliqué, la fonction "createParagraph()" sera exécutée
+*/
+
+
+let buttons = document.querySelectorAll('button');
+
+for(let i = 0; i < buttons.length; i++);
+buttons[i].addEventListener('click', createParagraph)
