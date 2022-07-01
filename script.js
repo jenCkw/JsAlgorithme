@@ -1,132 +1,16 @@
-//Les methodes
-//1.indexof
-//let nom = 'jenny';
-//console.log(nom.indexOf('y'));
+// generer un nombre aleatoire .
+let randomNumber = Math.floor(Math.random() * 100) + 1; //reçoit le nombre aléatoire entre 1 et 100, calculé en utilisant un algorithme mathématique.
 
-//Les varaibles
-// let nom = "jenny";
-// let postnom = "Chikwanine"
-// console.log(nom, postnom);
+let guesses = document.querySelector('.guesses');
+let lastResult = document.querySelector('.lastResult');
+let lowOrHi = document.querySelector('.lowOrHi');
 
-// let nom_complet = nom + " " + postnom;
+let guessSubmit = document.querySelector('.guessSubmit');
+let guessField = document.querySelector('.guessField');
 
-// console.log(nom_complet, postnom);
+let guessCount = 1;
+let resetButton;
 
-//---------------toUppercase----------
-// let lgr = nom.length;
-// console.log(lgr);
-// console.log(nom.toUpperCase());
-// console.log(nom.toLowerCase());
-
-
-//Les methodes en js
-//-----indexof
-
-// let nom = 'jenny';
-// console.log(nom.indexOf('y'));
-
-//-----slice
-
-// let nom = jenny;
-// console.log(nom.slice(3,5));
-
-//Exercice1
-
-
-//----methode substr
-
-// let nom = 'jenny';
-// console.log(nom.substr(0, 4));
-
-// console.log(nom.typeof);
-
-// Fonctions
-
-// const myTExt = 'i am jenny';
-// const newString = myTExt.replace('jenny', 'chikwanine')
-// console.log(myTExt);
-// console.log(newString);
-
-// let nom = 'Dorcas muhindo';
-// nom = 'jenny chikwnine';
-// console.log(nom);
-
-// let name = 'je suis fort moi';
-// let name2 = name.replace('je suis', 'nous sommes');
-// console.log(name, name2);
-
-// // fonction join
-
-// const myArray = ['I', 'love', 'chocolate'];
-
-// const madeAString = myArray.join(' ');
-// console.log(madeAString);
-
-
-// const jenny = ['I', 'love', 'chocolate'];
-
-// const chik = jenny.join(' ');
-// console.log(chik);
-
-//la methode random
-//const myNumber = Math.random()
-//console.log(myNumber);
-
-//comportement dynalique avec js
-// let para = document.querySelector('p')
-
-// para.addEventListener('click', updateName);
-// para.addEventListener('click', deletename);
-
-// function updateName() {
-//     let name = prompt('enter a new name');
-//     para.textContent = 'player 1:' + name;
-//     para.textContent = 'player 2:' + name;
-
+// function checkGuess() {
+//     alert('je suis un espace réservé')
 // }
-
-// function deletename(){
-//     let name2 =  prompt('delete name')
-//     para.textContent =  'delete 2:'+ name2;
-// }
-
-//function 2
-//  let para = document.querySelector('p');
-//  para.addEventListener('click', updateName);
-
-//  function updateName() {
-//      let name = prompt('Enter a new name');
-//      para.textContent = 'player 1:' +name;
-//  }
-
-/*function createParagraphe() {
-    let para =  document.createElement('p');
-    para.textContent = 'Vous avez cliqué';
-    document.body.appendChild(para)
-}
-
-let buttons = document.querySelectorAll('button');
-
-for (let i=0; i < buttons.length; i++){
-    buttons[i].addEventListener('click',createParagraph);
-}
-*/
-
-/*function createParagraph() {
-    let para = document.createElement('p');
-    para.textContent = 'you clicked the button';
-    para.body.appendChild(para);
-}*/
-
-/*
-  1. Regrouper les coordonnées de tous les boutons de la page et les organiser en tableau
-  2. Faire une boucle dans ce tableau et ajouter un "click event listener" à chaque bouton
-
-  Quand le bouton est cliqué, la fonction "createParagraph()" sera exécutée
-*/
-
-
-let buttons = document.querySelectorAll('button');
-
-for(let i = 0; i < buttons.length; i++);
-buttons[i].addEventListener('click', createParagraph)
