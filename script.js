@@ -65,13 +65,13 @@
 // console.log(text);
 
 //object
-const person = {
-  firstname: "jenny",
-  lastname: "chikwanine",
-  id: 500,
-  fullname: function () {
-    return this.firstname + " " + this.lastname;
-  },
-};
+// const person = {
+//   firstname: "jenny",
+//   lastname: "chikwanine",
+//   id: 500,
+//   fullname: function () {
+//     return this.firstname + " " + this.lastname;
+//   },
+// };
 
-console.log(person);
+// console.log(person);
