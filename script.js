@@ -72,4 +72,4 @@ const car = {
   color: "blue",
 };
 
-console.log(car.type);
+console.log(car["type"]);
