@@ -65,11 +65,13 @@
 // console.log(text);
 
 //object
-
-const car = {
-  type: "fiat",
-  model: "500",
-  color: "blue",
+const person = {
+  firstname: "jenny",
+  lastname: "chikwanine",
+  id: 500,
+  fullname: function () {
+    return this.firstname + " " + this.lastname;
+  },
 };
 
-console.log(car["type"]);
+console.log(person);
