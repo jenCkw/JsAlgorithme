@@ -52,7 +52,24 @@
 
 //Convert Fahrenheit to Celsius:
 
-function toCelsius(f) {
-  return (5 / 9) * (f - 32);
-}
-document.getElementById("demo").innerHTML = toCelsius(77);
+// function toCelsius(f) {
+//   return (5 / 9) * (f - 32);
+// }
+// document.getElementById("demo").innerHTML = toCelsius(77);
+
+// let x = function toCelsius(a) {
+//   let text = "The temperature is " + x + " Celsius";
+//   return text;
+// };
+// toCelsius(7);
+// console.log(text);
+
+//object
+
+const car = {
+  type: "fiat",
+  model: "500",
+  color: "blue",
+};
+
+console.log(car.type);
