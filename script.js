@@ -43,9 +43,16 @@
 //   }
 
 //produit de deux nombres
-function myFunction(a, b) {
-  return a * b;
-}
+// function myFunction(a, b) {
+//   return a * b;
+// }
 
-let x = myFunction(4, 5);
-console.log(x);
+// let x = myFunction(4, 5);
+// console.log(x);
+
+//Convert Fahrenheit to Celsius:
+
+function toCelsius(f) {
+  return (5 / 9) * (f - 32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
