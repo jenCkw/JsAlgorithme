@@ -15,4 +15,6 @@ let episodes = [firstEpisode, secondEpisode, thirdEpisode];
 episodes.push("4emEpisode");
 episodes.push("episode5", "episode6");
 episodes.unshift("episode5", "episode6", "episode7");
+
+episodes.pop();
 console.log(episodes.length);
