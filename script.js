@@ -13,4 +13,6 @@ let thirdEpisode = new Episode("thirdBlablabla", "Attack on titan", 45);
 let episodes = [firstEpisode, secondEpisode, thirdEpisode];
 
 episodes.push("4emEpisode");
+episodes.push("episode5", "episode6");
+episodes.push("episode5", "episode6");
 console.log(episodes.length);
