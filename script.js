@@ -1,7 +1,15 @@
-let para = document.querySelectorAll("p");
-
-for (let i = 0; i < para.length; i++) {
-  para[i].textContent = "";
+class Episode {
+  constructor(title, duration, hasBeenWatched) {
+    this.title = title;
+    this.duration = duration;
+    this.hasBeenWatched = hasBeenWatched;
+  }
 }
 
-console.log(para);
+let firstEpisode = new Episode("Blalabla", "Got", 30);
+let secondEpisode = new Episode("secondeBlablabla", "Naruto", 20);
+let thirdEpisode = new Episode("thirdBlablabla", "Attack on titan", 45);
+
+console.log(firstEpisode);
+console.log(secondEpisode);
+console.log(thirdEpisode);
