@@ -1,20 +1,36 @@
-class Episode {
-  constructor(title, duration, hasBeenWatched) {
-    this.title = title;
-    this.duration = duration;
-    this.hasBeenWatched = hasBeenWatched;
-  }
+let age;
+let ageMajorite = 18;
+
+//Cette fonction affichera le message de validation
+function valider() {
+  espaceMessage.innerHTML = "Vous êtes autorisé à entrer";
 }
 
-let firstEpisode = new Episode("Blalabla", "Got", 30);
-let secondEpisode = new Episode("secondeBlablabla", "Naruto", 20);
-let thirdEpisode = new Episode("thirdBlablabla", "Attack on titan", 45);
+//Cette fonction affichera un message d'erreur
+function refuser() {
+  alert("Cette espace est interdit aux personnes mineurs");
+}
 
-let episodes = [firstEpisode, secondEpisode, thirdEpisode];
+function onConfirm() {
+  //On récupère la saisie de l'age et on transforme le texte en nombre entier
+  age = parseInt(ageInput.value);
+  //Si la saisie n'est pas un nombre, on affiche un message d'erreur
+  if (isNaN(age)) {
+    alert("Ceci n'est pas un nombre");
+    return;
+  }
 
-episodes.push("4emEpisode");
-episodes.push("episode5", "episode6");
-episodes.unshift("episode5", "episode6", "episode7");
+  //=======Code corrigé======
+  if (age < ageMajorite) {
+    refuser();
+  } else {
+    valider();
+  }
+  //=======/Code corrigé======
 
-episodes.pop();
-console.log(episodes.length);
+  //On vide le champ de saisie
+  ageInput.value = "";
+}
+
+//On écoute l'action de click sur le bouton et on appelle la fonction onConfirm
+bouton.addEventListener("click", onConfirm);
