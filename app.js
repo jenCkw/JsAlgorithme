@@ -1,6 +1,10 @@
-const numberOfPassengers = 10;
-for (let i = 0; i < numberOfPassengers; i++) {
-  console.log("Passager embarqué !");
-}
+const passager = [
+  "Will Alexander",
+  "Sarah Kate'",
+  "Audrey Simon",
+  "Tao Perkington",
+];
 
-console.log("Tous les passagers sont embarqués !");
+for (let i in passager) {
+  console.log("Embarquement du passager" + passager[i]);
+}
