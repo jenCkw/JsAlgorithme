@@ -1,43 +1,36 @@
-//on pointe sur l'element de message
-const espaceMessage = document.getElementById("message");
-//On pointe sur l'element du boutton
-const bouton = document.getElementById("bouton");
-//On pointe sur l'élément de chmaps de saisie
-const ageInput = document.getElementById("age");
-//On pointe sur l'élément de checkbox de controle
-const parentalInput = document.getElementById("parental");
+let firstUser = {
+  name: "Will Alexander",
+  age: 33,
+  accountLevel: "normal",
+};
 
-let age;
-let isControlParentalActive;
-let ageMajorite = 18;
+let secondUser = {
+  name: "Sarah Kate",
+  age: 21,
+  accountLevel: "premium",
+};
 
-//Cette fonction affichera un message de validation
-function valider() {
-  espaceMessage.innerHTML = "Vous etes autorisé à entrer";
-}
+let thirdUser = {
+  name: "Audrey Simon",
+  age: 27,
+  accountLevel: "mega-premium",
+};
 
-//Cette fonction affichera un message d'ereur
-function refuser() {
-  alert("cette espace est interdit aux personnes mineurs");
-}
+switch (firstUser.accountLevel) {
+  case "normal":
+    console.log("you have a normal account");
 
-function onConfirm() {
-  //On récupère la saisie de l"age et on transforme le texte en nombre entier
-  age = parseInt(ageInput.value);
-  //si la saisie n'est pas un nombre, on affiche un message d'erreur
-  //Si la saisie n'est pas un nombre, on affiche un message d'erreur
-  if (isNaN(age)) {
-    alert("ceci n'est pas un nombre");
-    return;
-  }
+    break;
 
-  //On recupere la valeur du chkekboc de control parental. "true" si coché ou "false" si décoché
-  isControlParentalActive = parentalInput.ariaChecked;
+  case "premium":
+    console.log("You have a premium account!");
 
-  //=====Code corrigé=====
-  if (age < ageMajorite && isControlParentalActive) {
-    refuser();
-  } else {
-    valider();
-  }
+    break;
+
+  case "mega-premium":
+    console.log("You have a mega premium account!");
+    break;
+
+  default:
+    console.log("Unknown account type");
 }
