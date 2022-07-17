@@ -1,4 +1,7 @@
-.main a{
-    padding:0 50px;
-    background-color: lightblue;
+body {
+  text-align: center;
+}
+
+#control {
+  padding-bottom: 10px;
 }
