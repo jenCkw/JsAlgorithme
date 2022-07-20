@@ -1,31 +1,9 @@
-//écrire une fonction qui parcourt un tableau de nombres pour calculer leur moyenne
-const calculateAverageRating = (ratings) => {
-  if (ratings.length === 0) {
-    return 0;
+class BankAccount {
+  constructor(owner, balance) {
+    this.owner = owner;
+    this.balance = balance;
   }
-
-  let sum = 0;
-  for (let rating of ratings) {
-    sum += rating;
+  showBalance() {
+    console.log("solde: " + this.balance + "EUR");
   }
-
-  return sum / ratings.length;
-};
-
-const tauRatings = [5, 4, 5, 5, 1, 2];
-const colinRatings = [5, 5, 5, 4, 5];
-
-const tauAverage = calculateAverageRating(tauAverage);
-const colinAverage = calculateAverageRating(colinRatings);
-
-if (tauAverage && colinAverage) {
-  document.querySelector("#tau-score").innerText =
-    tauAverage.toFixed(1) + " stars";
-  document.querySelector("#colin-score").innerText =
-    colinAverage.toFixed(1) + " stars";
-  document.querySelector("#clara-score").innerText = `${
-    calculateAverageRating([]) === 0
-      ? "No ratings"
-      : calculateAverageRating([]) + " stars"
-  }`;
 }
