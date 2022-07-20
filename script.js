@@ -3,7 +3,11 @@ class BankAccount {
     this.owner = owner;
     this.balance = balance;
   }
+
   showBalance() {
-    console.log("solde: " + this.balance + "EUR");
+    console.log("Solde: " + this.balance + " EUR");
   }
 }
+
+const jenny = new BankAccount("jenny", 500);
+jenny.showBalance();
