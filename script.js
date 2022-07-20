@@ -1,3 +1,4 @@
+//écrire une fonction qui parcourt un tableau de nombres pour calculer leur moyenne
 const calculateAverageRating = (ratings) => {
   if (ratings.length === 0) {
     return 0;
