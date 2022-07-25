@@ -1,16 +1,19 @@
+body {
+  padding: 50px;
+}
+
 article {
   margin: auto;
-  margin-bottom: 20px;
-  width: 90%;
+  width: 300px;
+  padding: 20px;
   border: 1px solid black;
-  padding: 10px;
 }
 
-#main {
-  font-weight: bold;
-  color: red;
+.link {
+  float: right;
+  margin-left: 30px;
 }
 
-.important {
-  font-style: italic;
+span {
+  margin: 10px;
 }
