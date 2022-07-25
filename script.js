@@ -1,6 +1,4 @@
-let p = document.createElement("p");
-const addp = document.getElementById("main");
-addp.appendChild(p);
-p.innerHTML = "Mon <strong>grand</strong> contenu";
-p.classList.add("important");
-p.style.color = "green";
+const elt = document.getElementById("min-lien");
+elt.addEventListener("click", function () {
+  elt.innerHTML = "C'est cliqué";
+});
