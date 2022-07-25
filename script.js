@@ -1,13 +1,12 @@
-let parentClicks = 0;
-let childClicks = 0;
-
-document.getElementById("parent").addEventListener("click", function () {
-  document.getElementById("parent-count").innerHTML = ++parentClicks + "";
+document.getElementById("name").addEventListener("input", function (e) {
+  document.getElementById("res-name").innerHTML = e.target.value;
 });
 
-document.getElementById("child").addEventListener("click", function (e) {
-  e.preventDefault();
-  e.stopPropagation();
+document.getElementById("gender").addEventListener("change", function (e) {
+  document.getElementById("res-gender").innerHTML = e.target.value;
+});
 
-  document.getElementById("child-count").innerText = ++childClicks + "";
+document.getElementById("result").addEventListener("mousemove", function (e) {
+  document.getElementById("mouse-x").innerHTML = e.offsetX;
+  document.getElementById("mouse-y").innerHtml = e.offsetY;
 });
