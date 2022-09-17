@@ -1,32 +1,18 @@
-function exampleLinear(n) {
-  for (var i = 0; i > n; i++) {
-    console.log(i);
+function sym(...args){
+  let result = [];
+  for(let i = 0; i < args.length; i++){
+
+    //pour  parcourrir le args
+    const arr = args[i];
+    result = [...result, ...arr].filter(x => !(result.includes(x) && arr.includes(x)) )
+
   }
+  
+  //ceci empeche la diplication de set
+
+  let set = new Set(result)
+  return [...set]
 }
 
-// //Exemple 2 : Similarly, O(n2
-// ) is quadratic time, and O(n3
-// ) is cubic time. Examples of these
-// complexities are shown here:
-
-function exampleQuadratic(n) {
-  for(var i = 0; i < n; i++){
-    console.log(i);
-    for( var j =i; j < n; j++){
-      console.log(j);
-    }
-  }
-}
-
-
-function exempleCubic(n){
-  for(var i = 0; i < 0; i++){
-    console.log(i);
-    for(var j = i; j < n; j++ ){
-      console.log(j);
-      for(var k = j; j < n; j++){
-        console.log(k);
-      }
-    }
-  }
-}
+let res = sym([1, 2, 3], [5, 2, 1, 4]);
+console.log(res)
